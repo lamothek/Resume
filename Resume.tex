@@ -3,13 +3,15 @@
 %----------------------------------------------------------------------------------------
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} %Document margins
+\usepackage[hidelinks]{hyperref}                                       %Package for hyperlinks without green box 
+
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
-\name{Kevin Lamothe}                            % Your name
-\address{605 Hoka Street, Winnipeg, MB R2C 2V2} % Your address
-\address{(204)890-6279 \\ klamothe@icloud.com}  % Your phone number and email
+\name{Kevin Lamothe}                                                                           %Name
+\address{605 Hoka Street, Winnipeg, MB R2C 2V2}                                                %Address
+\address{(204)890-6279 \\ klamothe@icloud.com \\ \href{www.kevinlamothe.ca}{kevinlamothe.ca}}  %Phone number, email, website
 
 \begin{document}
 
@@ -37,20 +39,24 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Work Experience}
-
 \begin{rSubsection}{Holley Performance Products Canada}{May 2017 - Present}{Electronics Test Engineer}{}
-\item Design verification testing of new product development for EFI (electronic fuel injection) applications. Responsible for qualifying new designs with initial electrical in circuit testing, mechanical vibration tests and burn in tests.
+    
+    \item Design verification testing of new product development for EFI (electronic fuel injection) applications. Responsible for qualifying new designs with initial electrical in circuit testing, mechanical vibration tests and burn in tests.
 
-\item Experience in analog, digital and high current electronic design. Responsible for schematic, BOM (Bill of Material), PCB layout for replacing unreliable test fixtures. 
+    \item Experience in analog, digital and high current electronic design. Responsible for schematic, BOM (Bill of Material), PCB layout for replacing unreliable test fixtures. 
 
-\item Designed circuits to replace products with end of life components, new designs required to meet or exceed current specifications. Performed research on requirements, created schematics, designed PCB and test fixtures to qualify new products to be released to production.
+    \item Designed circuits to replace products with end of life components, new designs required to meet or exceed current specifications. Performed research on requirements, created schematics, designed PCB and test fixtures to qualify new products to be released to production.
 
-\item Software development for manufacturing test applications. Used the C\# and .NET framework to develop functional test applications to deploy device firmware and perform functional tests for mass production. Applications required to interface with National Instruments DAQ devices, power supplies and CAN controllers while recording test outcomes to a SQL database.
+    \item Software development for manufacturing test applications. Used the C\# and .NET framework to develop functional test applications to deploy device firmware and perform functional tests for mass production. Applications required to interface with National Instruments DAQ devices, power supplies and CAN controllers while recording test outcomes to a SQL database.
+    
 \end{rSubsection}
 
 \begin{rSubsection}{Manitoba Hydro}{2011-2016}{Technical Support - Student}{}
-\item Responsible for project document control using established document management systems. Maintained a construction drawing set and updated with field revisions throughout the project as well as revised drawings from designers and external contractors. 
-\item Conducted project audits to establish work completed against project milestones. Required site visits to document contractor progress across Manitoba to be reported to project stakeholders.
+
+    \item Responsible for project document control using established document management systems. Maintained a construction drawing set and updated with field revisions throughout the project as well as revised drawings from designers and external contractors. 
+
+    \item Conducted project audits to establish work completed against project milestones. Required site visits to document contractor progress across Manitoba to be reported to project stakeholders.
+    
 \end{rSubsection}
 \end{rSection}
 
@@ -58,12 +64,23 @@
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Technical Strengths \& Tools}
-
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & C\#, C++, Matlab, Python, Latex \\
-Modeling Tools \ & AutoCad, Solidworks Electrical \\
-Circuit Design \ & Cadence CIS, Altium, KiCAD\\
-Development Tools & Visual Studio, Atollic True Studio, Arduino IDE \\
+
+    TODO - Add strenghts here \\
+
+\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROFICIENCIES  SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Proficiencies}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+    Programming Languages & C\#, C++, SQL, Matlab, Python \\
+    Circuit Design \ & Cadence CIS, Allegro, KiCAD\\
+    Modeling Tools \ & Solidworks, Solidworks Electrical, AutoCAD \\
+    Development Tools & Visual Studio, Atollic True Studio, Arduino ID\\
 
 \end{tabular}
 \end{rSection}
